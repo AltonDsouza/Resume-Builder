@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <EditText
+                android:id="@+id/fname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name of PDF " />
+
+            <EditText
+                android:id="@+id/ftext"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/fname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name " />
+            <EditText
+                android:id="@+id/fphone"
+                android:layout_below="@+id/ftext"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number" />
+            <EditText
+                android:id="@+id/femail"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/fphone"
+                android:inputType="textEmailAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email-Address"
+                />
+            <EditText
+                android:id="@+id/faddress"
+                android:layout_marginTop="10dp"
+                android:inputType="textMultiLine"
+                android:layout_below="@+id/femail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                />
+            <EditText
+                android:id="@+id/fobjective"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/faddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Career Objective"
+                android:layout_weight="0.00" />
+            <EditText
+                android:id="@+id/feducation"
+                android:layout_below="@id/fobjective"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Education"
+                />
+
+            <EditText
+                android:id="@+id/fcoursework"
+                android:inputType="textMultiLine"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/feducation"
+                android:hint="Course Undertaken"
+                android:layout_weight="0.00" />
+
+            <EditText
+                android:id="@+id/ftechskill"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fcoursework"
+                android:hint="Techincal Skills"
+                android:inputType="textMultiLine" />
+            <EditText
+                android:id="@+id/fexperience"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ftechskill"
+                android:hint="Experience"
+                />
+            <EditText
+                android:id="@+id/fproject"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Projects Undertaken"
+                android:layout_below="@id/fexperience"
+                android:layout_weight="0.00" />
+
+
+            <Button
+                android:id="@+id/btnwrite"
+                android:layout_marginTop="20dp"
+                android:text="Build Pdf"
+                android:layout_below="@+id/fproject"
+                android:layout_width="165dp"
+                android:layout_height="60dp"
+                android:typeface="sans"
+                android:background="@drawable/buttonshape_small"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                />
+
+            <Button
+                android:id="@+id/viewsd"
+                android:layout_below="@+id/btnwrite"
+                android:layout_marginTop="20dp"
+                android:text="View Pdf"
+                android:layout_width="165dp"
+                android:layout_height="60dp"
+                android:typeface="sans"
+                android:background="@drawable/buttonshape_small"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                />
+
+            <Button
+                android:id="@+id/mailbutton"
+                android:layout_below="@+id/viewsd"
+                android:layout_marginTop="20dp"
+                android:text="SHARE"
+                android:layout_width="165dp"
+                android:layout_height="60dp"
+                android:typeface="sans"
+                android:background="@drawable/buttonshape_small"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:layout_marginBottom="30dp"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

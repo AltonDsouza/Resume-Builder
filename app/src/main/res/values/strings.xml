@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ResumeBuilder</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_template_selection">CV writer</string>
+    <string name="title_activity_template_two">Template 2</string>
+    <string name="title_activity_template_one">Template 1</string>
+
+    <string name="exitOption">Exit</string>
+    <string name="clearOption">Clear</string>
+</resources>
